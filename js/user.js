@@ -24,6 +24,7 @@ async function login(evt) {
   $loginForm.trigger("reset");
   saveUserCredentialsInLocalStorage();
   updateUIOnUserLogin();
+  
 }
 
 $loginForm.on("submit", login);
@@ -108,7 +109,8 @@ function saveUserCredentialsInLocalStorage() {
 
 function updateUIOnUserLogin() {
   console.debug("updateUIOnUserLogin");
-
+  $loginForm.hide();
+  $signupForm.hide();
   $allStoriesList.show();
 
   updateNavOnLogin();

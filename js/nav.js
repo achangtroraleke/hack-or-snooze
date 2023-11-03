@@ -33,6 +33,7 @@ function updateNavOnLogin() {
   $(".main-nav-links").show();
   $navLogin.hide();
   $navLogOut.show();
+  $navLinkGroup.show();
   $navUserProfile.text(`${currentUser.username}`).show();
 }
 /** Shows the form to create a new story.*/
